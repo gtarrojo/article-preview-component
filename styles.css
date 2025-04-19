@@ -29,6 +29,7 @@ h2 {
   margin: 5rem auto;
   width: calc(100% - 20px);
   border-radius: 12px;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 255, 0.055);
 }
 
 .preview__img {
@@ -109,4 +110,16 @@ h2 {
 .preview__footer__share {
   height: 16px;
   width: 16px;
+}
+
+@media (min-width: 798px) {
+  .preview {
+    flex-direction: row;
+    max-width: 900px;
+  }
+
+  .preview__img {
+    width: 42%;
+    border-radius: 12px 0 0 12px;
+  }
 }

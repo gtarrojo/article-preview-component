@@ -87,18 +87,26 @@ h2 {
   color: var(--clr-blue-grayish);
 }
 
-.preview__footer__share {
-  width: 44px;
-  height: 44px;
+.preview__footer__share--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
-  object-fit: contain;
   background-color: var(--clr-blue-grayish-light);
-  padding: 10px;
-  border-radius: 99%;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
 }
 
-.preview__footer__share:hover,
-.preview__footer__share:focus {
+.preview__footer__share--container:hover,
+.preview__footer__share--container:focus {
   cursor: pointer;
   background-color: var(--clr-blue-grayish-very-dark);
+  fill: var(--clr-blue-grayish-light);
+  stroke: var(--clr-blue-grayish-light);
+}
+
+.preview__footer__share {
+  height: 16px;
+  width: 16px;
 }

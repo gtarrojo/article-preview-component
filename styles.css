@@ -130,8 +130,12 @@ h2 {
   z-index: 1000;
   background-color: var(--clr-blue-grayish-very-dark);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 20px;
+  left: 0;
+  right: 0;
   border-radius: 0 0 12px 12px;
+  width: 100%;
+  bottom: 0;
 }
 
 #preview__modal.visible {
@@ -141,8 +145,12 @@ h2 {
 .preview__modal--container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.preview__footer__share--container {
+  position: relative;
+  z-index: 10000;
 }
 
 .preview__modal__icon {
@@ -153,10 +161,6 @@ h2 {
 .preview__modal__icon:focus {
   transform: scale(1.25);
   cursor: pointer;
-}
-
-.preview__footer__share-wrapper {
-  position: relative;
 }
 
 /* media  */
@@ -180,6 +184,10 @@ h2 {
     bottom: 50px;
     left: -90px;
     right: 0;
+  }
+
+  .preview__footer__share-wrapper {
+    position: relative;
   }
 
   .preview__modal--container {

@@ -64,9 +64,16 @@ h2 {
 .preview__footer {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
   margin-bottom: 1rem;
-  margin-top: 2.6rem;
+  padding: 0 2rem;
+}
+
+.preview__footer__info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-right: auto;
 }
 
 .preview__footer__avatar {
@@ -96,7 +103,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   background-color: var(--clr-blue-grayish-light);
   border-radius: 50%;
   height: 36px;
@@ -124,9 +130,6 @@ h2 {
   z-index: 1000;
   background-color: var(--clr-blue-grayish-very-dark);
   border-radius: 12px;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 1rem;
   border-radius: 0 0 12px 12px;
 }
@@ -152,6 +155,10 @@ h2 {
   cursor: pointer;
 }
 
+.preview__footer__share-wrapper {
+  position: relative;
+}
+
 /* media  */
 
 @media (min-width: 798px) {
@@ -167,13 +174,12 @@ h2 {
 
   #preview__modal {
     width: 220px;
-    bottom: auto;
-    top: -60px;
-    right: 0;
-    left: auto;
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    bottom: 50px;
+    left: -90px;
+    right: 0;
   }
 
   .preview__modal--container {

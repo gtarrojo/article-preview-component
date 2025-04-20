@@ -153,6 +153,12 @@ h2 {
   z-index: 10000;
 }
 
+.preview__modal__text {
+  color: var(--clr-blue-grayish);
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
+
 .preview__modal__icon {
   transition: transform 0.2s;
 }
@@ -181,16 +187,33 @@ h2 {
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    bottom: 50px;
-    left: -90px;
+    bottom: 60px;
+    left: -105px;
     right: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .preview__footer__share-wrapper {
     position: relative;
   }
 
+  #preview__modal::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid var(--clr-blue-grayish-very-dark);
+    border-bottom: -12px;
+    left: 50%;
+    transform: translateX(-50);
+  }
+
   .preview__modal--container {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.2rem;
+    align-items: center;
   }
 }
